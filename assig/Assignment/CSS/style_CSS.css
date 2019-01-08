@@ -1,0 +1,402 @@
+
+body div.head{
+    height: 10vh;
+    width: 100vw;
+    background-color: #00a65a;
+}
+body div.head h1{
+    font-size: 40px; ;
+    font-family: "Arial Narrow";
+}
+div.main_section{
+    position: relative;
+
+}
+div.main_section div.main_content{
+    margin-left: 400px;
+}
+
+div.main_section div.main_nav{
+    width: 20vw;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+    /*background: linear-gradient(to right, #000000, #001180, #001180);*/
+}
+div.main_section div.main_nav ol li{
+    font-size: 30px;
+    font-family: Arial;
+    color: #ffffff;
+    list-style-type: none;
+}
+div.first{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(to right, blue, #ffffff, blue);
+    position: relative;
+    width: 800px;
+    height: 550px;
+    margin: auto;
+}
+
+.button {
+    /*background-color: #4CAF50; !* Green *!*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.add {
+    background-color: rgba(28, 19, 23, 0.22);
+    font-size: 25px;
+    border: none;
+}
+.update{
+    background-color: rgba(28, 19, 23, 0.22);
+    font-size: 25px;
+    border: none;
+}
+.remove{
+    background-color: rgba(28, 19, 23, 0.22);
+    font-size: 25px;
+    border: none;
+}
+
+.search{
+    background-color: rgba(28, 19, 23, 0.22);
+    font-size: 25px;
+    border: none;
+}
+
+.button_aside{
+    position: center;
+    width: 100%;
+    height: 55px;
+    border: none;
+    color: rgba(0, 0, 0, 0.47);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(28, 19, 23, .1);
+    font-size: 25px;
+    margin: 7px 0;
+    color: white;
+}
+.button_aside:hover{
+    background-color: rgba(0, 0, 0, 0.31);
+    color: aqua;
+    border-left: 5px ridge green;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+}
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height:100%;
+    animation: animate 15s linear infinite;
+}
+.container .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+/*.container .slider .slide .caption{*/
+    /*position: fixed;*/
+    /*bottom: 60px;*/
+    /*left: 60px;*/
+    /*right: 60px;*/
+    /*padding: 30px;*/
+    /*background: rgba(0,0,0,.5);*/
+    /*box-sizing: border-box;*/
+/*}*/
+/*.container .slider .slide .caption h2{*/
+    /*margin: 0 0 20px;*/
+    /*padding: 0;*/
+    /*color: #fff;*/
+    /*font-size: 48px;*/
+/*}*/
+/*.container .slider .slide .caption p{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*color: #fff;*/
+    /*font-size: 18px;*/
+/*}*/
+.container .slider .slide.slide1{
+    background: url("../Image/background-calm-cambodia-678640.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide2{
+    background: url("../Image/asphalt-daylight-from-above-1406822.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide3{
+    background: url("../Image/branches-cold-conifers-773594.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide4{
+    background: url("../Image/animal-photography-daylight-elephant-247431.jpg");
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animate {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+#sub_head_div {
+    height: 100vh;
+    width: 20vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 45px;
+    margin: 0;
+}
+.cus_icon{
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    right: 80%;
+}
+.order_icon h2, .item_icon h2,.cus_icon h2{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+.item_icon{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+}
+.order_icon{
+    left: 67%;
+    right: 33%;
+}
+.order_icon, .item_icon, .cus_icon{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-bottom: 4px  ridge white;
+    border-top: 4px ridge  white;
+    border-left: 4px ridge white;
+    border-right: 4px ridge white;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+}
+.order_icon:hover, .item_icon:hover, .cus_icon:hover{
+    width: 220px;
+    height: 220px;
+    border-bottom: 6px  ridge blueviolet;
+    border-top: 6px ridge aqua;
+    border-left: 6px ridge blueviolet;
+    border-right: 6px ridge aqua;
+}
+.order_icon h2:hover, .item_icon h2:hover,.cus_icon h2:hover{
+
+}
+
+
+
+@media all and (min-width: 0px) and (max-width: 500px){
+
+    body div.head{
+        height: 10vh;
+        width: 100vw;
+        background-color: #00a65a;
+    }
+    body div.head h1{
+        font-size: 40px; ;
+        font-family: "Arial Narrow";
+    }
+    .container{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 90vh;
+    }
+    .container .slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500%;
+        height:100%;
+        animation: animate 20s linear infinite;
+    }
+    .container .slider .slide{
+        position: relative;
+        width: 20%;
+        height: 100%;
+        float: left;
+    }
+    .container .slider .slide.slide1{
+        background: url("../Image/background-calm-cambodia-678640.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .container .slider .slide.slide2{
+        background: url("../Image/asphalt-daylight-from-above-1406822.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .container .slider .slide.slide3{
+        background: url("../Image/branches-cold-conifers-773594.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .container .slider .slide.slide4{
+        background: url("../Image/animal-photography-daylight-elephant-247431.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    @keyframes animate {
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+    #sub_head_div {
+        height: 100vh;
+        width: 20vw;
+        top: 0;
+        left: 0;
+        position: absolute;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 0;
+    }
+    .cus_icon{
+        top: 0;
+        bottom: 0;
+        left: 8%;
+        right: 92%;
+    }
+    .order_icon h2, .item_icon h2,.cus_icon h2{
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+    .item_icon{
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+
+    }
+    .order_icon{
+        left: 67%;
+        right: 33%;
+    }
+    .order_icon, .item_icon, .cus_icon{
+        width: 120px;
+        height: 120px;
+        position: fixed;
+        background: rgba(0,0,0,.7);
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-bottom: 2px  ridge white;
+        border-top: 2px ridge  white;
+        border-left: 2px ridge white;
+        border-right: 2px ridge white;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        cursor: pointer;
+    }
+    .order_icon:hover, .item_icon:hover, .cus_icon:hover{
+        width: 140px;
+        height: 140px;
+        border-bottom: 4px  ridge blueviolet;
+        border-top: 4px ridge aqua;
+        border-left: 4px ridge blueviolet;
+        border-right: 4px ridge aqua;
+    }
+    .order_icon h2:hover, .item_icon h2:hover,.cus_icon h2:hover{
+
+    }
+}
